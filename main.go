@@ -24,13 +24,16 @@ func main() {
 	// 	models.Product{ID: primitive.NewObjectID(), Name: "Vivo", Price: 100000, Description: "China Phone"}}
 	// services.InsertProductList(products)
 
+	// product, _ := services.DisplayContent()
 
+	// for index, result := range product {
+	// 	fmt.Println(index, result)
+	// }
 
-	product,_:= services.DisplayContent()
+	transaction, _ := services.DisplayTransaction()
 
-	for index,result := range product{
-		fmt.Println(index,result)
+	for index, result := range transaction {
+		fmt.Println(index, result)
 	}
-
 
 }
