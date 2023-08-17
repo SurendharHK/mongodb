@@ -30,10 +30,16 @@ func main() {
 	// 	fmt.Println(index, result)
 	// }
 
-	transaction, _ := services.DisplayTransaction()
+	// transaction, _ := services.DisplayTransaction()
 
-	for index, result := range transaction {
-		fmt.Println(index, result)
-	}
+	// for index, result := range transaction {
+	// 	fmt.Println(index, result)
+	// }
+
+	// services.FetchAggregatedTransaction()
+
+	result,err := services.UpdateTransaction()
+
+	
 
 }
